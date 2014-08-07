@@ -1,64 +1,68 @@
-// this sets the background color of the master UIView (when there are no windows/tab groups on it)
-Titanium.UI.setBackgroundColor('#000');
+var stringArray = ["Hello", "Goodbye", "Hola", "Adios", "Peace"];
 
-// create tab group
-var tabGroup = Titanium.UI.createTabGroup();
-
-
-//
-// create base UI tab and root window
-//
-var win1 = Titanium.UI.createWindow({  
-    title:'Tab 1',
-    backgroundColor:'#fff'
-});
-var tab1 = Titanium.UI.createTab({  
-    icon:'KS_nav_views.png',
-    title:'Tab 1',
-    window:win1
+var mainWindow = Ti.UI.createWindow({
+	backgroundColor: "#ccc",
 });
 
-var label1 = Titanium.UI.createLabel({
-	color:'#999',
-	text:'I am Window 1',
-	font:{fontSize:20,fontFamily:'Helvetica Neue'},
-	textAlign:'center',
-	width:'auto'
+var nextView = Ti.UI.createLabel({
+	backgroundColor: "#990000",
+	height: "50dp",
+	width: "100dp",
+	right: "30dp",
+	bottom: "20dp",
+	// bottom: "10dp",
+	borderRadius: "5dp",
+	borderColor: "#0000000",
+	borderWidth: "3dp",
+});
+var previousView = Ti.UI.createLabel({
+	backgroundColor: "#990000",
+	height: "50dp",
+	width: "100dp",
+	left: "30dp",
+	bottom: "20dp",
+	// bottom: "10dp",
+	borderRadius: "5dp",
+	borderColor: "#0000000",
+	borderWidth: "3dp",
+});
+var contentView = Ti.UI.createView({
+	backgroundColor: "#fff",
+	right: "30dp",
+	top: "40dp",
+	left: "30dp",
+	bottom: "100dp",
+	// bottom: "10dp",
+	borderRadius: "5dp",
+	borderColor: "#0000000",
+	borderWidth: "3dp",
 });
 
-win1.add(label1);
+var next = Ti.UI.createLabel({
+	text: "Next",
+	color: "#000000",
+	font: {fontSize: "14dp", fontFamily: "Helvetica", fontWeight: "bold", fontStyle: "italic"}
 
-//
-// create controls tab and root window
-//
-var win2 = Titanium.UI.createWindow({  
-    title:'Tab 2',
-    backgroundColor:'#fff'
-});
-var tab2 = Titanium.UI.createTab({  
-    icon:'KS_nav_ui.png',
-    title:'Tab 2',
-    window:win2
 });
 
-var label2 = Titanium.UI.createLabel({
-	color:'#999',
-	text:'I am Window 2',
-	font:{fontSize:20,fontFamily:'Helvetica Neue'},
-	textAlign:'center',
-	width:'auto'
+var previous = Ti.UI.createLabel({
+	text: "Previous",
+	color: "#000000",
+	font: {fontSize: "14dp", fontFamily: "Helvetica", fontWeight: "bold", fontStyle: "italic"}
+
+});
+var contentText = Ti.UI.createLabel({
+	text: stringArray[0],
+	color: "#000000",
+	font: {fontSize: "14dp", fontFamily: "Helvetica", fontWeight: "bold", fontStyle: "italic"}
+
 });
 
-win2.add(label2);
 
-
-
-//
-//  add tabs
-//
-tabGroup.addTab(tab1);  
-tabGroup.addTab(tab2);  
-
-
-// open tab group
-tabGroup.open();
+mainWindow.open();
+previousView.add(previous);
+mainWindow.add(previousView);
+nextView.add(next);
+mainWindow.add(nextView);
+mainWindow.add(contentView);
+contentView.add(contentText);
