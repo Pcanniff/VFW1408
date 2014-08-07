@@ -1,9 +1,8 @@
 var stringArray = ["Hello", "Goodbye", "Hola", "Adios", "Peace"];
-
 var mainWindow = Ti.UI.createWindow({
+	title: "Project 1",
 	backgroundColor: "#ccc",
 });
-
 var nextView = Ti.UI.createLabel({
 	backgroundColor: "#990000",
 	height: "50dp",
@@ -12,7 +11,7 @@ var nextView = Ti.UI.createLabel({
 	bottom: "20dp",
 	// bottom: "10dp",
 	borderRadius: "5dp",
-	borderColor: "#0000000",
+	borderColor: "#000000",
 	borderWidth: "3dp",
 });
 var previousView = Ti.UI.createLabel({
@@ -23,7 +22,7 @@ var previousView = Ti.UI.createLabel({
 	bottom: "20dp",
 	// bottom: "10dp",
 	borderRadius: "5dp",
-	borderColor: "#0000000",
+	borderColor: "#000000",
 	borderWidth: "3dp",
 });
 var contentView = Ti.UI.createView({
@@ -34,35 +33,28 @@ var contentView = Ti.UI.createView({
 	bottom: "100dp",
 	// bottom: "10dp",
 	borderRadius: "5dp",
-	borderColor: "#0000000",
+	borderColor: "#000000",
 	borderWidth: "3dp",
 });
-
-var next = Ti.UI.createLabel({
+var nextText = Ti.UI.createLabel({
 	text: "Next",
-	color: "#000000",
+	color: "#fff",
 	font: {fontSize: "14dp", fontFamily: "Helvetica", fontWeight: "bold", fontStyle: "italic"}
-
 });
-
-var previous = Ti.UI.createLabel({
+var previousText = Ti.UI.createLabel({
 	text: "Previous",
-	color: "#000000",
+	color: "#fff",
 	font: {fontSize: "14dp", fontFamily: "Helvetica", fontWeight: "bold", fontStyle: "italic"}
-
 });
 var contentText = Ti.UI.createLabel({
 	text: stringArray[0],
 	color: "#000000",
 	font: {fontSize: "14dp", fontFamily: "Helvetica", fontWeight: "bold", fontStyle: "italic"}
-
 });
-
-
-mainWindow.open();
-previousView.add(previous);
+previousView.add(previousText);
+nextView.add(nextText);
+contentView.add(contentText);
 mainWindow.add(previousView);
-nextView.add(next);
 mainWindow.add(nextView);
 mainWindow.add(contentView);
-contentView.add(contentText);
+mainWindow.open();

@@ -45,7 +45,7 @@ public final class Canniff_philip_project1AppInfo implements ITiAppInfo
 	}
 
 	public String getDescription() {
-		return "";
+		return "undefined";
 	}
 
 	public String getIcon() {
