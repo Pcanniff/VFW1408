@@ -1,0 +1,44 @@
+var diplomacy = {
+	"alliedData": {
+		"objs": [
+			{
+				"header": "Allies",
+				"footer": "Friendlies",
+				"leader": "Elizabeth",
+				"country": "Great Britain"
+			},
+			
+		
+			{
+				"header": "Allies",
+				"footer": "Friendlies",
+				"leader": "Washington",
+				"country": "U.S. America"
+			}
+		]
+	},
+	"axisData": {
+		"objs": [
+			{	
+				"header": "Axis",
+				"footer": "Opponents",
+				"leader": "Stalin",
+				"country": "U.S.S.R."
+			},
+			{	
+				"header": "Allies",
+				"footer": "Friendlies",
+				"leader": "Castro",
+				"country": "Cuba"
+			}
+		]
+	}
+};
+
+exports.diplomacy = diplomacy;
+
+
+
+
+
+

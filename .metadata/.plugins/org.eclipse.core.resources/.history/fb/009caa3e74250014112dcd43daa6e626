@@ -1,0 +1,48 @@
+var diplomacy = {
+	"alliedData": {
+		"objs": [
+			{
+				"leader": "Elizabeth",
+				"country": "Great Britain"
+			},
+			
+		
+			{
+				"leader": "Kennedy",
+				"country": "U.S. America"
+			}
+		]
+	},
+	"axisData": {
+		"objs": [
+			{
+				"leader": "Stalin",
+				"country": "U.S.S.R."
+			},
+			{
+				"leader": "Castro",
+				"country": "Cuba"
+			}
+		]
+	}
+};
+
+exports.information = diplomacy;
+
+
+var diplomats = [
+
+{properties: {selectionStyle: Ti.UI.iPhone.ListViewCellSelectionStyle.BLUE, title: loadFile.information.alliedData.objs[0].leader, image: "queen.png", accessoryType: Ti.UI.LIST_ACCESSORY_TYPE_DETAIL}},
+
+{properties: {selectionStyle: Ti.UI.iPhone.ListViewCellSelectionStyle.BLUE, title: loadFile.information.alliedData.objs[1].leader, image: "george.png", accessoryType: Ti.UI.LIST_ACCESSORY_TYPE_DETAIL}},
+
+{properties: {selectionStyle: Ti.UI.iPhone.ListViewCellSelectionStyle.BLUE, title: loadFile.information.axisData.objs[0].leader, image: "stalin.png", accessoryType: Ti.UI.LIST_ACCESSORY_TYPE_DETAIL}},
+
+{properties: {selectionStyle: Ti.UI.iPhone.ListViewCellSelectionStyle.BLUE, title: loadFile.information.axisData.objs[1].leader, image: "castro.png", accessoryType: Ti.UI.LIST_ACCESSORY_TYPE_DETAIL}},
+
+];
+
+exports.diplomats = diplomats;
+
+
+
