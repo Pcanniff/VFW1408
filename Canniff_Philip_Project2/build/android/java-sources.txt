@@ -1,7 +1,0 @@
-"/Users/philipcanniff/Desktop/Visual Frameworks/VFW1408/Canniff_Philip_Project2/build/android/gen/android/support/v7/appcompat/R.java"
-"/Users/philipcanniff/Desktop/Visual Frameworks/VFW1408/Canniff_Philip_Project2/build/android/gen/com/PhilipCanniff/Project2/ApplicationStylesheet.java"
-"/Users/philipcanniff/Desktop/Visual Frameworks/VFW1408/Canniff_Philip_Project2/build/android/gen/com/PhilipCanniff/Project2/Project2Activity.java"
-"/Users/philipcanniff/Desktop/Visual Frameworks/VFW1408/Canniff_Philip_Project2/build/android/gen/com/PhilipCanniff/Project2/Project2AppInfo.java"
-"/Users/philipcanniff/Desktop/Visual Frameworks/VFW1408/Canniff_Philip_Project2/build/android/gen/com/PhilipCanniff/Project2/Project2Application.java"
-"/Users/philipcanniff/Desktop/Visual Frameworks/VFW1408/Canniff_Philip_Project2/build/android/gen/com/PhilipCanniff/Project2/R.java"
-"/Users/philipcanniff/Desktop/Visual Frameworks/VFW1408/Canniff_Philip_Project2/build/android/gen/ti/modules/titanium/ui/R.java"

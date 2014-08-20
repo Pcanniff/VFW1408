@@ -5,8 +5,12 @@
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="wholeword"/>
-		<item value="diplomatArray" key="selection"/>
+		<item value="alliedData" key="selection"/>
 		<list key="findhistory">
+			<item value="alliedData"/>
+			<item value="listArray"/>
+			<item value="getDetail"/>
+			<item value="item"/>
 			<item value="diplomatArray"/>
 			<item value="Axis"/>
 			<item value="axis"/>
