@@ -541,3 +541,134 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/philipca
 
 !ENTRY org.eclipse.osgi 2 1 2014-08-19 15:45:19.273
 !MESSAGE NLS missing message: LaunchAppToolbarContribution_NoSelectedProjects in: com.appcelerator.titanium.ui.messages
+!SESSION 2014-08-20 16:59:55.971 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/philipcanniff/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/philipcanniff/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-08-20 16:59:58.114
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 2 0 2014-08-20 16:59:58.542
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-08-20 16:59:58.542
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-08-20 16:59:58.542
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY org.eclipse.osgi 2 1 2014-08-20 17:00:03.810
+!MESSAGE NLS missing message: LaunchAppToolbarContribution_NoSelectedProjects in: com.appcelerator.titanium.ui.messages
+!SESSION 2014-08-20 20:25:47.094 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/philipcanniff/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/philipcanniff/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-08-20 20:25:49.557
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 2 0 2014-08-20 20:25:49.994
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-08-20 20:25:49.994
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-08-20 20:25:49.995
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY org.eclipse.osgi 2 1 2014-08-20 20:25:56.684
+!MESSAGE NLS missing message: LaunchAppToolbarContribution_NoSelectedProjects in: com.appcelerator.titanium.ui.messages
+!SESSION 2014-08-21 13:24:25.346 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/philipcanniff/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/philipcanniff/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-08-21 13:24:27.858
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 2 0 2014-08-21 13:24:28.339
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-08-21 13:24:28.339
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-08-21 13:24:28.339
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY org.eclipse.osgi 2 1 2014-08-21 13:24:33.421
+!MESSAGE NLS missing message: LaunchAppToolbarContribution_NoSelectedProjects in: com.appcelerator.titanium.ui.messages
+!SESSION 2014-08-21 17:05:04.379 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/philipcanniff/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -data /Users/philipcanniff/Desktop/Visual Frameworks/VFW1408 -keyring /Users/philipcanniff/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-08-21 17:05:10.654
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 2 0 2014-08-21 17:05:11.170
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-08-21 17:05:11.171
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-08-21 17:05:11.171
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY org.eclipse.osgi 2 1 2014-08-21 17:05:22.329
+!MESSAGE NLS missing message: LaunchAppToolbarContribution_NoSelectedProjects in: com.appcelerator.titanium.ui.messages
+!SESSION 2014-08-21 17:08:47.385 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/philipcanniff/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -data /Users/philipcanniff/Desktop/Visual Frameworks/VFW1408 -keyring /Users/philipcanniff/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-08-21 17:08:48.826
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 2 0 2014-08-21 17:08:48.925
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-08-21 17:08:48.925
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-08-21 17:08:48.925
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY org.eclipse.osgi 2 1 2014-08-21 17:08:51.282
+!MESSAGE NLS missing message: LaunchAppToolbarContribution_NoSelectedProjects in: com.appcelerator.titanium.ui.messages
+!SESSION 2014-08-21 17:44:35.668 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/philipcanniff/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/philipcanniff/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-08-21 17:44:37.213
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 2 0 2014-08-21 17:44:37.324
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-08-21 17:44:37.324
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-08-21 17:44:37.324
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY org.eclipse.osgi 2 1 2014-08-21 17:44:39.861
+!MESSAGE NLS missing message: LaunchAppToolbarContribution_NoSelectedProjects in: com.appcelerator.titanium.ui.messages
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-08-21 17:44:45.684
+!MESSAGE An internal error occurred during: "Update Android info".
+!STACK 0
+java.lang.NullPointerException
+	at com.appcelerator.titanium.android.core.AndroidSDKLocator.getLaunchShortcutManager(AndroidSDKLocator.java:429)
+	at com.appcelerator.titanium.android.core.AndroidSDKLocator.parseTiInfo(AndroidSDKLocator.java:294)
+	at com.appcelerator.titanium.android.core.AndroidSDKLocator.updateTiInfo(AndroidSDKLocator.java:217)
+	at com.appcelerator.titanium.android.core.AndroidSDKLocator.access$0(AndroidSDKLocator.java:214)
+	at com.appcelerator.titanium.android.core.AndroidSDKLocator$1.run(AndroidSDKLocator.java:234)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)

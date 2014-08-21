@@ -1,0 +1,59 @@
+var loadFile = require("operations");
+Ti.UI.setBackgroundColor("#fff");
+
+var win = Ti.UI.createWindow({
+	backgroundColor: "#333",
+	//layout: "horizontal",
+	top: "20dp",
+});
+var gallery = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "images");
+var galleryList = gallery.getDirectoryListing();
+var numberOfViews = galleryList.length;
+var platWidth = Ti.Platform.displayCaps.platformWidth;
+var spacing = 2;
+var rowCount = 3;
+
+if (Ti.Platform.osname == "android"){
+	rowCount = rowCount*3;
+}
+
+
+var size = (platWidth - (spacing*(rowCount+1)))/rowCount;
+
+var viewContainer = Ti.UI.createScrollView({
+	width: platWidth,
+	contentWidth: platWidth,
+	layout: "horizontal",
+	scrollVerticalIndicator: true
+});
+
+var makeViews = function(num){
+	for(var i=0, j=num; i<num; i++){
+	var newView = Ti.UI.createView({
+		top: spacing,
+		left: spacing,
+		// right: "2dp",
+		// bottom: "2dp",
+		backgroundColor: "#fff",
+		
+		width: size,
+		height: size,
+		borderRadius: 20 
+	
+	});
+
+
+	var newImage = Ti.UI.createImageView({
+		width: size + 30,		
+		image: "/images/" + galleryList[i],
+		borderRadius: 0
+		
+	});
+	newView.add(newImage);
+	viewContainer.add(newView);
+	}
+};	
+
+makeViews(numberOfViews);
+win.open();
+win.add(viewContainer);
