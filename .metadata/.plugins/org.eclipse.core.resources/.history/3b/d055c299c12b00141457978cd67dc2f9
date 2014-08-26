@@ -1,0 +1,43 @@
+var gallery = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "images");
+var galleryList = gallery.getDirectoryListing();
+var numberOfViews = galleryList.length;
+var platWidth = Ti.Platform.displayCaps.platformWidth;
+var spacing = 2;
+var rowCount = 3;
+var size = (platWidth - (spacing * (rowCount + 1))) / rowCount;
+var galleryNum =  " of " + numberOfViews;
+var imageArray =[];
+
+Ti.UI.setBackgroundColor("#fff");
+var win = Ti.UI.createWindow({
+	orientationModes : [Ti.UI.LANDSCAPE_LEFT, Ti.UI.LANDSCAPE_RIGHT, Ti.UI.PORTRAIT, Ti.UI.UPSIDE_PORTRAIT],
+	title : "Tattoo Gallery",
+	titleAttributes: {
+		font: "Zapfino",
+		color: "#ccc",
+		
+	},
+	backgroundColor : "#333",
+	//layout: "horizontal",
+});
+var navWin = Ti.UI.iOS.createNavigationWindow({
+	window : win,
+});
+var viewContainer = Ti.UI.createScrollView({
+	width : platWidth,
+	contentWidth : platWidth,
+	layout : "horizontal",
+	scrollVerticalIndicator : true
+});
+var scrollWindow = Ti.UI.createWindow({
+	title: galleryNum,
+	backgroundColor : "#333",
+});
+var scrollView = Ti.UI.createScrollableView({
+	width : platWidth,
+	contentWidth : platWidth,
+	showPagingControl : true,
+	views : [],
+});
+
+var loadFile = require("operations");

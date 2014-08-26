@@ -5,19 +5,44 @@ var platWidth = Ti.Platform.displayCaps.platformWidth;
 var spacing = 2;
 var rowCount = 4;
 var size = (platWidth - (spacing * (rowCount + 1))) / rowCount;
+var galleryNum =  " of " + numberOfViews;
+
 
 Ti.UI.setBackgroundColor("#fff");
-
 var win = Ti.UI.createWindow({
+	orientationModes : [Ti.UI.LANDSCAPE_LEFT, Ti.UI.LANDSCAPE_RIGHT, Ti.UI.PORTRAIT, Ti.UI.UPSIDE_PORTRAIT],
+	title : "Tattoo Gallery",
+	titleAttributes: {
+		font: "Zapfino",
+		color: "#000",
+		fontSize: "14dp"
+	},
 	backgroundColor : "#333",
-	//layout: "horizontal",
-	top : 20,
+});
+var navWin = Ti.UI.iOS.createNavigationWindow({
+	window : win,
 });
 var viewContainer = Ti.UI.createScrollView({
 	width : platWidth,
 	contentWidth : platWidth,
 	layout : "horizontal",
-	scrollVerticalIndicator : true
+	scrollVerticalIndicator : true,
+	top: 10
+});
+var scrollWindow = Ti.UI.createWindow({
+	title: galleryNum,
+	titleAttributes: {
+		font: "Roboto",
+		color: "#000",
+		
+	},
+	backgroundColor : "#333",
+});
+var scrollView = Ti.UI.createScrollableView({
+	width : platWidth,
+	contentWidth : platWidth,
+	showPagingControl : true,
+	views : [],
 });
 
 var loadFile = require("operations");
