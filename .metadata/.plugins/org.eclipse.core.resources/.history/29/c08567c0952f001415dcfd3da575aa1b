@@ -1,0 +1,38 @@
+var diplomacy = {
+	"allieData" : {
+		"header" : "Boob",
+		"objs" : [{
+
+			"recipe" : "Gumbo",
+			"style" : "Cajun",
+			"detail" : "Gumbo.jpg",
+			"color" : "#fff"
+		}, {
+
+			"recipe" : "Pho",
+			"style" : "Vietnanmese",
+			"detail" : "Pho.jpg",
+			"color" : "#000"
+		}]
+	},
+	"axisData" : {
+		"header" : "Booty",
+		"objs" : [{
+
+			"recipe" : "Khmer Red Curry",
+			"style" : "Cambodian",
+			"detail" : "khmer.jpg",
+			"color" : "#fff"
+		}, {
+
+			"recipe" : "Shrimp Vindaloo",
+			"style" : "Indian",
+			"detail" : "vindaloo.jpg",
+			"color" : "#fff"
+
+		}]
+	}
+};
+
+exports.diplomacy = diplomacy;
+

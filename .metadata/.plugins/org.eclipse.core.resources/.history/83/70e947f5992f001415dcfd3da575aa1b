@@ -1,0 +1,42 @@
+var diplomacy = {
+	"allieData" : {
+		"header" : "Cajun",
+		"objs" : [{
+
+			"recipe" : "Gumbo",
+			"style" : "Cajun",
+			"left": 64,
+			"detail" : "/images/Gumbo.jpg",
+			"color" : "#fff"
+		}, {
+
+			"recipe" : "E'touffe",
+			"style" : "Cajun",
+			"left": 64,
+			"detail" : "/images/touffe.jpg",
+			"color" : "#000"
+		}]
+	},
+	"axisData" : {
+		"header" : "Asian",
+		"objs" : [{
+
+			"recipe" : "Khmer Red Curry",
+			"style" : "Cambodian",
+			"left": 48,
+			"detail" : "/images/khmer.jpg",
+			"color" : "#fff"
+		}, {
+
+			"recipe" : "Pho",
+			"style" : "Vietnamese",
+			"left": 100,
+			"detail" : "/images/Pho.jpg",
+			"color" : "#fff"
+
+		}]
+	}
+};
+
+exports.diplomacy = diplomacy;
+

@@ -1,0 +1,55 @@
+var diplomacy = {
+	"allieData": {
+		"header": "Allies",
+		"objs": [
+			{
+				
+				"recipe": "Elizabeth",
+				"style": "Great Britain",
+				"photo": "queen.png",
+				"detail": "gb.png",
+				"color": "#fff"
+			},
+			
+		
+			{
+				
+				"recipe": "Washington",
+				"style": "U.S. America",
+				"photo": "george.png",
+				"detail": "US.png",
+				"color": "#000"
+			}
+		]
+	},
+	"axisData": {
+		"header": "Axis",
+		"objs": [
+			{	
+				
+				"recipe": "Stalin",
+				"style": "U.S.S.R.",
+				"photo": "stalin.png",
+				"detail": "USSR.png",
+				"color": "#fff"
+			},
+			{	
+				
+				"recipe": "Castro",
+				"style": "Cuba",
+				"photo": "castro.png",
+				"detail": "Cuba.png",
+				"color": "#fff"
+			
+			}
+		]
+	}
+};
+
+exports.diplomacy = diplomacy;
+
+
+
+
+
+

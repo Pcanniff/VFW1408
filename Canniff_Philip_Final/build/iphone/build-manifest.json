@@ -1,0 +1,23 @@
+{
+	"target": "simulator",
+	"deployType": "development",
+	"deviceFamily": "universal",
+	"iosSdkPath": "/Users/philipcanniff/Library/Application Support/Titanium/mobilesdk/osx/3.3.0.GA/iphone",
+	"tiCoreHash": "77157e1ffaec640cf559356a147b6a4c",
+	"modulesHash": "d41d8cd98f00b204e9800998ecf8427e",
+	"modulesNativeHash": "d41d8cd98f00b204e9800998ecf8427e",
+	"gitHash": "787cd39",
+	"name": "Canniff_Philip_Final",
+	"id": "com.Canniff.Final",
+	"analytics": true,
+	"publisher": "philipcanniff",
+	"url": "http://",
+	"version": "1.0",
+	"description": "",
+	"copyright": "2014 by philipcanniff",
+	"guid": "719bfaf8-1bb9-4469-81ba-9f287e64a6af",
+	"skipJSMinification": true,
+	"forceCopy": false,
+	"forceCopyAll": false,
+	"encryptJS": false
+}

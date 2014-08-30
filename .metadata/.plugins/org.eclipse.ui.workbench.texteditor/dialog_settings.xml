@@ -2,19 +2,19 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="false" key="casesensitive"/>
 		<item value="false" key="isRegEx"/>
+		<item value="false" key="casesensitive"/>
 		<item value="false" key="wholeword"/>
-		<item value="alliedData" key="selection"/>
+		<item value="diplomacy" key="selection"/>
 		<list key="findhistory">
+			<item value="diplomacy"/>
+			<item value="Diplomacy"/>
+			<item value="#FF9900"/>
+			<item value="leader"/>
+			<item value="country"/>
+			<item value="mainWindow"/>
 			<item value="alliedData"/>
 			<item value="listArray"/>
-			<item value="getDetail"/>
-			<item value="item"/>
-			<item value="diplomatArray"/>
-			<item value="Axis"/>
-			<item value="axis"/>
-			<item value="information"/>
 		</list>
 	</section>
 </section>
