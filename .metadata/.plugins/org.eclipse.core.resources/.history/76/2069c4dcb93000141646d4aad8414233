@@ -1,7 +1,9 @@
 width = Ti.Platform.displayCaps.platformWidth;
 height = Ti.Platform.displayCaps.platformHeight;
-console.log(height);
-images = ["/images/1.jpg", "/images/2.jpg", "/images/3.jpg", "/images/4.jpg", "/images/5.jpg", "/images/6.jpg", "/images/7.jpg", "/images/8.jpg", "/images/9.jpg", "/images/10.jpg"];
+var j = Math.floor(Math.random() * 10);
+console.log(width);
+images = ["/images/food/1.jpg", "/images/food/2.jpg", "/images/food/3.jpg", "/images/food/4.jpg", "/images/food/5.jpg", 
+"/images/food/6.jpg", "/images/food/7.jpg", "/images/food/8.jpg", "/images/food/9.jpg", "/images/food/10.jpg"];
 prev = 0;
 win = Ti.UI.createWindow({
 	title: "VF 1408 Final",
@@ -12,44 +14,45 @@ win = Ti.UI.createWindow({
 	backgroundColor: "#FF9900",
 	barColor: "#FF9900"
 });
-table = 
 nav = Ti.UI.iOS.createNavigationWindow({
 	window: win
 });
 buttonOne = Ti.UI.createButton({
-	top: 10,
-	height: 150,
-	width: 150,
-	backgroundImage: "/icons/green.png",
+	title: "Food Table",
+	color: "#000",
+	top: 150,
+	height: 75,
+	width: 320,
+	backgroundImage: "/icons/yellowTab.png",
 	
 });
 buttonTwo = Ti.UI.createButton({
-	top: 170,
-	height: 150,
-	width: 150,
-	backgroundImage: "/icons/black.png",
+	title: "Food Gallery",
+	color: "#000",
+	top: 225,
+	height: 75,
+	width: 320,
+	backgroundImage: "/icons/orangeTab.png",
 	
 });
-var buttonTwoText = Ti.UI.createLabel({
-	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
-	
-		font : {
-			fontSize : "15dp",
-			fontFamily : "Zapfino",
-			fontStyle : "Bold",
-		},
-		color : "#fff",
-		text : "Tattoo \n Gallery"
-		
-		
-	});
 buttonThree = Ti.UI.createButton({
 	title: "Custom Page",
-	top: 330,
-	height: 150,
-	width: 150,
-	backgroundImage: "/icons/blue.png",
+	color: "#000",
+	top: 300,
+	height: 75,
+	width: 320,
+	backgroundImage: "/icons/redTab.png",
 	
+});
+footer = Ti.UI.createLabel({
+	text: "Philip A. Canniff \n #0004622989",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	color: "#000",
+	bottom: 0,
+	height: 60,
+	width: width,
+	backgroundColor: "#FFFF99",
+	borderRadius: 0
 });
 randomLabel = Ti.UI.createLabel({
 	text: "Tap photo for a random image!",
@@ -81,7 +84,7 @@ var randomWindow = Ti.UI.createWindow({
 	barColor: "#FF9900",
 	title : "Random Photo",
 	titleAttributes: {
-	color : "#ccc",
+	color : "#fff",
 	font : {
 		fontSize : "20dp",
 		fontFamily : "Roboto",
@@ -94,7 +97,7 @@ var randomWindow = Ti.UI.createWindow({
 var customWindow = Ti.UI.createWindow({
 	fullscreen : false,
 	barColor: "#FF9900",
-	title : "Random Photo",
+	title : "Slider",
 	titleAttributes: {
 	color : "#ccc",
 	font : {
@@ -111,11 +114,17 @@ var viewContainer = Ti.UI.createView({
 	width: width,
 	bottom: 60
 });
-var j = Math.floor(Math.random() * 10);
 var viewImage = Ti.UI.createImageView({
 	height: 500,
 	width: "100%",
 	image: images[j],
+	
+});
+var logoImage = Ti.UI.createImageView({
+	top: 5,
+	height: 125,
+	width: 125,
+	image: "/images/logo.png",
 	
 });
 var customContainer = Ti.UI.createView({
@@ -145,6 +154,5 @@ var loadFile = require("process");
 
 win.add(buttonOne);
 win.add(buttonTwo);
-buttonTwo.add(buttonTwoText);
 win.add(buttonThree);
 nav.open();

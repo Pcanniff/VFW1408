@@ -89,7 +89,6 @@ var randomize = function(){
 	}
 	prev = n;
 	
-	
 };
 viewImage.addEventListener("click", function(){
 	randomize();

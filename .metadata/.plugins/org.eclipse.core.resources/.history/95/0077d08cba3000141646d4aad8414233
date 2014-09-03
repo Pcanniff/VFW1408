@@ -5,8 +5,8 @@ var getDetail = function(item) {
 	var detailWindow = Ti.UI.createWindow({
 		backgroundImage : item.detail,
 		backgroundColor: "#fff",
-		barColor: "#996633",
-		title: item.style,
+		barColor: "#FF9900",
+		title: item.title,
 		titleAttributes: {
 			color : "#fff",
 			font : {
@@ -20,9 +20,9 @@ var getDetail = function(item) {
 		
 	});
 	var detailView = Ti.UI.createView({
-		height: 120,
-		width: 120,
-		top: 40,
+		height: 140,
+		width: 140,
+		top: 30,
 		right: 20,
 		backgroundImage: "/images/label.png"
 		
@@ -30,10 +30,11 @@ var getDetail = function(item) {
 	var detailText = Ti.UI.createLabel({
 		left: item.left,
 		font : {
-			fontSize : "11dp",
-			fontFamily : "Helvetica",
+			fontSize : "13dp",
+			fontFamily : "American Typewriter",
+			fontStyle : "Bold",
 		},
-		color : item.color,
+		color : "#fff",
 		text : item.style,
 		
 		
@@ -46,20 +47,21 @@ var getDetail = function(item) {
 		this.close();
 	});
 };
-for (n in loadFile.diplomacy) {
+for (n in loadFile.data) {
 	var tableSection = Ti.UI.createTableViewSection({
-		headerTitle : loadFile.diplomacy[n].header,
+		headerTitle : loadFile.data[n].header,
+		footerTitle : loadFile.data[n].footer
 
 	});
 	tableArray.push(tableSection);
-	for (var i = 0; i < loadFile.diplomacy[n].objs.length; i++) {
-		var diplomatArray = [];
+	for (var i = 0; i < loadFile.data[n].objs.length; i++) {
 		var theRow = Ti.UI.createTableViewRow({
-			title : loadFile.diplomacy[n].objs[i].recipe,
-			color : "#000",
+			title : loadFile.data[n].objs[i].recipe,
+			color : loadFile.data[n].objs[i].color,
 			hasDetail : true,
-			style : loadFile.diplomacy[n].objs[i].style,
-			detail: loadFile.diplomacy[n].objs[i].detail,
+			style : loadFile.data[n].objs[i].style,
+			detail: loadFile.data[n].objs[i].detail,
+			left: loadFile.data[n].objs[i].left
 		});
 		
 		tableSection.add(theRow);
@@ -69,6 +71,7 @@ for (n in loadFile.diplomacy) {
 };
 
 var tableView = Ti.UI.createTableView({
+	backgroundColor: "#fcbd35",
 	data : tableArray,
 	style : Ti.UI.iPhone.TableViewStyle.PLAIN,
 });
@@ -101,12 +104,22 @@ buttonOne.addEventListener("click", function() {
 	nav.openWindow(tableWindow);
 });
 buttonTwo.addEventListener("click", function() {
+	var j = Math.floor(Math.random() * 10);
 	nav.openWindow(randomWindow);
+});
+buttonThree.addEventListener("click", function(){
+	customContainer.add(customImage);
+	customWindow.add(customContainer);
+	customWindow.add(slider);
+	nav.openWindow(customWindow);
+	
 });
 
 randomWindow.add(viewContainer);
-randomWindow.add(buttonFour);
+randomWindow.add(randomLabel);
 viewContainer.add(viewImage);
+win.add(logoImage);
 win.add(buttonOne);
 win.add(buttonTwo);
 win.add(buttonThree);
+win.add(footer);

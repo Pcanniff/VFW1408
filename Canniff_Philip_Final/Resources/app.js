@@ -1,7 +1,6 @@
 width = Ti.Platform.displayCaps.platformWidth;
 height = Ti.Platform.displayCaps.platformHeight;
 var j = Math.floor(Math.random() * 10);
-console.log(width);
 images = ["/images/food/1.jpg", "/images/food/2.jpg", "/images/food/3.jpg", "/images/food/4.jpg", "/images/food/5.jpg", 
 "/images/food/6.jpg", "/images/food/7.jpg", "/images/food/8.jpg", "/images/food/9.jpg", "/images/food/10.jpg"];
 prev = 0;
